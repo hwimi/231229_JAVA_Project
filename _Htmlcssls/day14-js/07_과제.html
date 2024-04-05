@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: gray;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 700;
+            background-color: yellow;
+            border: 2px solid black;
+        }
+
+        button:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" onclick="btn(1)"><img src="../image/가위.jpg" alt="">
+        <p>가위(1)</p>
+    </button>
+    <button type="button" onclick="btn(2)"><img src="../image/주먹.jpg" alt="">
+        <p>바위(2)</p>
+    </button>
+    <button type="button" onclick="btn(3)"><img src="../image/보자기.jpg" alt="">
+        <p>보(3)</p>
+    </button>
+    <h3><span id="result"></span></h3>
+    <script>
+       
+
+        function gaga(){
+            let baba=Math.floor((Math.random()*3)+1);
+            return;
+        }
+
+        function btn(player) {
+         //let player=0;
+         let com=0;
+         let win=0;
+         let loss=0;
+         let draw=0;
+         let cnt=0;
+
+         let result=document.getElementById("result");
+         
+            cnt++
+            com=gaga();
+            let printResult;
+            if(player==com){
+                printResult='무승부입니다'
+                draw++;
+            }else if(player == 1 && com == 3 || player == 2 && com == 1 || player == 3 && com == 1){
+                printResult="승리하였습니다"
+                win++;
+
+            }else{
+                printResult="패배하였습니다"
+            }
+            let playerp=(player==1)?'가위':(player==2)?'바위':'보';
+            let comp=(com==1)?'가위':(com==2)?'바위':'보';
+            let per=((win/cnt)*100).toFixed(2);
+            document.getElementById("result").innerText=`player:${playerp}/com:${comp}
+            ${printResult}`
+            
+         
+ 
+
+
+
+        }  
+    </script>
+
+</body>
+
+</html>

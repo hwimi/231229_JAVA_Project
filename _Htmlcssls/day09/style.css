@@ -1,0 +1,318 @@
+.wrap>header {
+    width: 90%;
+
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.wrap>header>ul {
+    display: flex;
+
+
+
+}
+
+.wrap>header>ul>li {
+    margin: 10px;
+
+}
+
+.wrap>header>ul>li>a {
+    color: black;
+}
+
+.information>ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto 10px;
+    /* 위 좌우 아래*/
+    width: 50%;
+
+
+
+}
+
+.information>ul>li>a {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+section>img {
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+
+
+}
+
+main>.con-box>a {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 560px;
+    margin: 30px auto;
+
+
+}
+
+main>.con-box>a>.mTit {
+    display: flex;
+    font-weight: 700;
+    color: black;
+
+}
+
+.time>.txt {
+    font-weight: 700;
+    color: black;
+}
+
+.time {
+    display: flex;
+}
+
+.tit {
+    margin-right: 10px;
+    color: black;
+}
+
+.time1 {
+    height: 20px;
+    margin-left: 100px;
+}
+
+.white {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+
+
+}
+
+.font {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.back-img {
+    background-image: url(../day09/img/mainCon1_bg.jpg);
+    width: 100%;
+    height: 700px;
+    position: relative;
+
+
+}
+
+.con2>.back-img>.picture>.all-time-picture {
+    background-image: url(../day09/img/상설전시.jpg);
+    height: 50%;
+    width: 50%;
+    background-size: 100% 100%;
+    float: left;
+
+
+
+}
+
+.con2>.back-img>.picture>.spical-time-picture {
+    background-image: url(../day09/img/특별전시.jpg);
+    height: 50%;
+    width: 50%;
+    background-size: 100% 100%;
+
+    float: right;
+}
+
+.font1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 500px;
+
+}
+
+.back-img>div {
+
+    padding: 20px;
+}
+
+.back-color {
+    background-color: aquamarine;
+    width: 100%;
+    height: 500px;
+    position: absolute
+}
+
+.font2 {
+    text-align: center;
+
+}
+
+.weight {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.gray {
+    color: gray;
+}
+
+.con3>.back-color>.active>ul {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+
+.take {
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.con3>.active>.student {
+    z-index: 5;
+}
+
+.pc {
+    background-image: url(../day09/img/전통문화역사교육.jpg);
+    width: 375px;
+    height: 246px;
+}
+
+.fit10 {
+    text-align: center;
+    background-color: white;
+}
+
+.pc11 {
+    background-image: url(../day09/img/전통공예처험.jpg);
+    width: 375px;
+    height: 246px;
+}
+
+.pc12 {
+    background-image: url(../day09/img/문화행사.jpg);
+    width: 375px;
+    height: 246px;
+}
+
+.back-color-white {
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    margin-top: 550px;
+
+
+}
+
+.white-font {
+
+    text-align: center;
+    color: black
+}
+
+.white-font1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.information2 {
+    border: 2px solid black;
+    margin-top: 10px;
+    width: 50%;
+    height: 80%;
+    float: left;
+}
+
+.information-font {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: nowrap;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+pre {
+    color: gray;
+}
+
+.information3 {
+    border: 1px solid black;
+    width: 20%;
+    height: 40%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.img20 {
+    width: 50px;
+    height: 65px;
+
+
+    background-image: url(../day09/img/mainCon3_util1_img2.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+}
+
+.information4 {
+    text-align: center;
+    height: 200px;
+    text-align: center;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+.information5 {
+    border: 1px solid black;
+    width: 20%;
+    height: 40%;
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.information6 {
+    text-align: center;
+    height: 200px;
+    text-align: center;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+.img21 {
+    width: 50px;
+    height: 65px;
+    background-image: url(../day09/img/mainCon3_util1_img1.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+}
+.img22{
+    width: 45.4%;
+    height: 190px;
+    background-image: url(../day09/img/mainCon3_banner.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+    float: left;
+    margin-left: 20px;
+}

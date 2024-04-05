@@ -1,0 +1,83 @@
+package day12;
+
+/*-학생정보를 관리하기 위한 클래스
+ * -학생 기본정보 : 이름, 생년월일, 전화번호 나이
+ * -학원정보:학원명="EZEN" final static, 지점
+ * -수강정보:수강과목, 기간
+ * 여러과목을 들을수 있음 (여러과목을 수강하기 위해서는 배열로 처리 5과목까지 가능)
+ * ex) 홍길동 0001010 010-1111-111 25
+ * EZEN(인천)
+ * 자바6개월 파이썬1개월 빅데이터 3개월
+ * 기능(메서드)
+ * -학생기본정보를 출력하능 기능
+ * -학원정보를 출력하는기능
+ * -수강정보를 출력하는 기능
+ * -학생의 수강 정보를 추가하는 기능
+ */
+public class 과제 {
+
+	public static void main(String[] args) {
+	
+		
+		
+		
+		
+
+	}
+
+}
+
+class student{
+private String name;
+private String brith;
+private String number;
+private String age;
+private final static String ACADEMY="EZEN";
+private String gigum;
+private String subject;
+private String duration;
+private String arr[]=new String[5];
+int count=0;
+
+public void inforamtion() {
+	System.out.println("이름:"+(name)+"나이:"+(age)+"생일:"+number+"생일:"+brith);
+	
+}
+public void gigum() {
+	System.out.println(ACADEMY+"("+gigum+")");
+	
+}
+public void subject() {
+	if(count==4) {
+		System.out.println("더이상 추가 할수없습니다.");
+	}
+	else {
+		arr[0]=this.subject+this.duration;
+		count++;
+		arr[count]=subject+duration;
+	}
+}
+public void edu() {	
+	System.out.println("name 수강하고 있는 과목:");
+	for(int i=0; i<count+1; i++) {
+		System.out.println(arr[i]);
+	}
+	
+
+		
+	
+}
+public student() {
+	
+}
+
+public student(String name, String brith, String number, String age,String gigum,String subjcet, {
+	
+}
+	
+	
+	
+	
+
+	
+}

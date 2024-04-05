@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    가격:<input type="text" id="money"><br>
+    할인율:<input type="text" id="discount"><br>
+    <button type="button" onclick="button">할인가격 계산</button>
+    <ol id="ol"></ol>
+    <script>
+        const ol=document.getElementById('ol');
+        let money=document.getElementById('money');
+        let discount=document.getElementById('discount');
+
+        function button(){
+            ol.innerHTML+=`<li>가격:${money.value}</li>`
+            let discount=Number(discount);
+            let sale_rate=discount*0.01;
+            ol.innerHTML+=`<li>:할인율:${discount.value}</li>`
+            ol.innerHTML+=`<>`
+            
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>리스트 구조에 따라 자바스크립트 객체 생성</h1>
+    <form action="">
+        이름: <input type="text" id="name"><br>
+        거주지: <input type="text" id="addr"><br>
+        좋아하는 리스트<br>
+        리스트1: <input type="text" id="favor1"><br>
+        리스트2: <input type="text" id="favor2"><br>
+        리스트3: <input type="text" id="favor3"><br>
+        이메일: <input type="text" id="email"><br>
+        내가 가장좋아하는것: <input type="text" id="wanna"><br>
+        <button type="button" onclick="getDates()">객체로 전송</button>
+    </form>
+
+
+    <h1>전송받은 데이터 표로<button type="button" id="prinbtn">출력</button></h1><br>
+
+    <table border="1" id="dateTable" width="300px" height="300px">
+        <tr>
+            <th></th>
+            <td></th>
+        </tr>
+        <tr>
+            <th></th>
+            <td></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <li></li>
+                <li></li>
+                <li></li>
+            </td>
+        </tr>
+
+        <tr>
+            <th></th>
+            <td></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td></td>
+        </tr>
+    </table>
+    <script>
+        const dateObj = {
+            name: "",
+            addr: "",
+            favors: {
+                favor1: "",
+                favor2: "",
+                favor3: "",
+            },
+            email: "",
+            wanna: ''
+
+        };
+
+
+
+        console.log(dateObj);
+        // document.getElementById('prinbtn').addEventListener('click',()=>{
+        //     let dateTable =document.getElementById('dataTable')
+        //     let str=` <tr><th>이름</th><td>${dateObj.name}</td></tr>`;
+        // }
+        
+        function getDates() {
+            dateObj.name = document.getElementById('name').value;
+            dateObj.addr = document.getElementById('addr').value;
+            dateObj.favors.favor1 = document.getElementById('favor1').value;
+            dateObj.favors.favor2 = document.getElementById('favor2').value;
+            dateObj.favors.favor3 = document.getElementById('favor3').value;
+            dateObj.email = document.getElementById('email').value;
+            dateObj.wanna = document.getElementById('wanna').value;
+
+            console.log(dateObj);
+            
+
+        }
+
+    </script>
+</body>
+
+</html>

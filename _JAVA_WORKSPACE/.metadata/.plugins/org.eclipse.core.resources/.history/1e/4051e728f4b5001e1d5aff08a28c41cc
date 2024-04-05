@@ -1,0 +1,12 @@
+package day11;
+
+public class Method10 {
+
+	public static void main(String[] args) {
+		/*재귀메서드:메서드 안에서 본인의 메서드를 호출하는 메서드
+		 * !:팩토리얼
+		 */
+
+	}
+
+}

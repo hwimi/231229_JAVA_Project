@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'NanumSquareB';
+    src: url(../font/nanum-square/NanumSquareB.ttf);
+}
+@font-face {
+    font-family: 'NanumSquareEB';
+    src: url(../font/nanum-square/NanumSquareEB.ttf);
+}
+
+.inner{
+    /* background-color: rgb(215, 246, 250); */
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/* header */
+header{
+    top: 0;
+    position: sticky;
+    z-index: 1;
+    background-color: #dfeefa;
+}
+.container>header>.inner>form>a{
+    display: flex;
+    justify-content: center;
+}
+.container>header>.inner>form>a>img{
+    width: 120px;
+    height: 100px;
+}
+.container>header>.inner>form>nav>ul{
+    background-color: #0f426c;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 10px 0;
+}
+.container>header>.inner>form>nav>ul>li>a{
+    font-size: 20px;
+    text-decoration-line: none;
+    line-height: 80px;
+    color: white;
+    font-family: 'NanumSquareEB';
+}
+.container>header>.inner>form>nav>ul>li>a:hover{
+    color: #3E9AE5;
+}
+.bold{
+    font-weight: bold;
+}

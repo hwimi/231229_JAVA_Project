@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>가위 바위 보를 10번하여 승률 출력</h1>
+    <button type="button" id="btn">승률출력</button>
+    <h3>
+        10게임의 승률은 <span id="result"></span>%입니다
+    </h3>
+
+    <script>
+        //가위 바위 보 게임
+        //com=random/player=random
+        //1=가위 2=바위 3=보
+        //승률을 출산 (승/(10-무))*100 소수점 2자리까지 표현
+        //콘솔에 com, player 출력
+        //콘솔에 승: 무: 패:
+
+
+
+        document.getElementById('btn').addEventListener('click', () => {
+
+            let count;
+            let win = 0;
+            let los = 0;
+            let draw = 0;
+            for (let i = 1; i <= 10; i++) {
+                let player = Math.floor((Math.random() * 3)) + 1;
+                let com = Math.floor((Math.random() * 3)) + 1;
+                console.log(player);
+                console.log(com);
+                if (player == com) {
+                    draw++;
+                } else if (player == 1 && com == 3 || player == 2 && com == 1 || player == 3 && com == 1) {
+                    win++;
+                }
+                else {
+                    los++;
+                }
+
+            }
+            console.log("player");
+
+            document.getElementById('result').innerHTML=`승:${win},무:${draw},패:${los}`
+        })
+    </script>
+</body>
+<!-- toPixed -->
+
+</html>

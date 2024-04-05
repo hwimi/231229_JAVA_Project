@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        input 2개 생성=>과목,점수
+        map 추가
+        출력=>mpa을 출력 ul=>li 형태로 출력 html:90
+        결과=>합계,평균,합격여부(60이상이면 합격)=>
+    -->
+    <form action="">
+        과목:<input type="text" id="subject"><br>
+        점수:<input type="text" id="score"><br>
+        <button type="button" onclick="btn1()">추가</button>
+        <button type="button" onclick="btn2()">출력</button>
+        <button type="button" onclick="btn3()">결과</button>
+    </form>
+    <ul id="result">
+
+    </ul>
+    <h3 id="tot">
+
+    </h3>
+
+
+
+    <script>
+          
+           function btn1(){
+            let subject=document.getElementById("subject").value
+            let score=Number(document.getElementById("score").value)
+            my.set(subject,score)
+            console.log(my)
+           }
+           function btn2(){
+            let a=btn1()
+            my.forEach(function(v, i, s){
+            // value (index?? key??)(self는 뭐냐 ..)
+            })
+            }
+            let show=document.getElementById("show").innerHTML=
+
+
+
+
+        const myMap = new Map();
+        const subject = document.getElementById("subject")
+        const score = document.getElementById("score")
+        const result = document.getElementById("result")
+        const tot = document.getElementById("tot")
+        const btn2 = document.getElementById("btn2")
+        const btn3 = document.getElementById("btn3 ")
+        let sum=0;
+
+        function btn1(){
+            let suval=subject.value;
+            let scorevalue=Number(score.value);
+            myMap.set(suval,scorevalue);
+            sum+=scorevalue;
+            console.log(myMap);
+            console.log(sum);
+            subject.value='';
+            score.value='';
+        }
+        btn2.addEventListener('click',()=>{
+            let str='';
+            myMap.forEach(function(v,l){
+                str+=`<li>${k}:${v}</li>`;
+            })
+            result.innerHTML=str;
+        })
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        상하좌우 값이 있을경우
+        magin:10px 상하좌우 전체 여백
+        magin:10px 20px=>상하 좌우
+        magin:10px 20px 30px=>상 좌우 하
+        magin:10px 20px 30px 40px=>상 우 하 좌(시계방향)
+
+     -->
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            margin: 10px;
+            color: white;
+            background-color: red;
+            float: left;
+            text-align: center;
+          
+            
+            
+            
+        }
+        div:hover{
+            position: relative;
+            background-color: aqua;
+            transform: translate(10%,10%);
+            background-image: url(../image/강아지1.jpg);
+            background-size: 100px 100px;
+
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="T">T</div>
+    <div class="H">H</div>
+    <div class="A">A</div>
+    <div class="N">N</div>
+    <div class="K">K</div>
+    <div class="S">S</div>
+    
+</body>
+</html>

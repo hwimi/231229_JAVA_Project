@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          fieldset{
+            border: 1px solid red;
+            width: 300px;
+          }
+    </style>
+</head>
+<body>
+        
+    <!--성적확인
+        이름:홍길동
+        국어:input
+        영어:input
+        수학:input
+        성적계산버튼
+        ------------------
+        이름:홍길동
+        국어:80
+        영어:80
+        수학:80
+        합계:
+        평균:
+     -->
+     <form action="">
+        <fieldset>
+            <legend>성적확인</legend>
+            이름: <input type="text" id="name"><br>
+            국어: <input type="text" id="kr"><br>
+            영어: <input type="text" id="en"><br>
+            수학: <input type="text" id="math"><br>
+            <button type="button" onclick="button()">성적계산버튼</button>
+        </fieldset>
+     </form>
+     <ol id="ol"></ol>
+      <script>
+        const ol=document.getElementById('ol');
+        let name = document.getElementById('name');
+        let kr = document.getElementById('kr');
+        let en= document.getElementById('en');
+        let math = document.getElementById('math');
+        
+        
+        function button(){
+            ol.innerHTML=`<li>이름:${name.value}</li>`
+            ol.innerHTML+=`<li>국어:${kr.value}</li>`
+            ol.innerHTML+=`<li>영어:${en.value}</li>`
+            ol.innerHTML+=`<li>수학:${math.value}</li>`
+            let kor=parseInt(kr.value);
+            let eng=parseInt(en.value);
+            let mat=parseInt(math.value);
+            let sum=kor+eng+mat;
+            let av=math.round(sum/3); //정수로 반올림
+            //.tofixed(2):소수점 자리표현
+            ol.innerHTML+=`<li>합계:${sum+'점'}</li>`
+            ol.innerHTML+=`<li>평균:${av+'점'}</li>`
+
+        }
+      </script>
+</body>
+</html>

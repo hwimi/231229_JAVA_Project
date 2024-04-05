@@ -1,0 +1,82 @@
+package day07;
+
+import java.util.Scanner;
+
+public class 과제수정 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		sc.close();
+		int meun=0;
+		int a=sc.nextInt();
+		do {
+			System.out.println("--menu--");
+			System.out.println("1.+ | 2.- |3.* | 4./ | 5.% |6.종료하기");
+			System.out.println(">>menu>>");
+			meun=sc.nextInt();
+			
+			switch(meun) {
+			case 1:
+				int num1=sc.nextInt();
+				int num2=sc.nextInt();
+				int sum=sum(a=sc.nextInt(), a=sc.nextInt());
+				System.out.println(sum);
+				break;
+			case 2:
+				int num3=sc.nextInt();
+				int num4=sc.nextInt();
+				int sub=sub(a=sc.nextInt(), a=sc.nextInt());
+				System.out.println(sub);
+			case 3:
+				int num5=sc.nextInt();
+				int num6=sc.nextInt();
+				int mul=div(a=sc.nextInt(), a=sc.nextInt());
+				System.out.println(mul);
+				break;
+			case 4:
+				int num7=sc.nextInt();
+				int num8=sc.nextInt();
+				int div=div(a=sc.nextInt(), a=sc.nextInt());
+				System.out.println(div);
+				break;
+			case 5:
+				int num9=sc.nextInt();
+				int num10=sc.nextInt();
+				int mod=mod(a=sc.nextInt(), a=sc.nextInt());
+				System.out.println(mod);
+				break;
+			}
+			}while(meun!=6); {
+				System.out.println("종류합니다");
+				
+			}
+		
+		sc.close();
+
+	}
+
+	public static int sub(int num1,int num2) {
+		if(num1<num2) {
+			return num2-num1;
+		}
+		return num1-num2;
+	}
+	public static int mul(int num1, int num2) {
+		return num1*num2;
+	}
+	public static int div(int num1, int num2) {
+		if(num1<num2) {
+			return num2/num1;
+		}
+		return num1/num2;
+	}
+	public static int mod(int num1, int num2) {
+		if(num1<num2) {
+			return num2%num1;
+		}
+		return num1%num2;
+	}
+	public static int sum(int num1,int num2) {
+		return num1+num2;
+ }
+}

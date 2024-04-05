@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        -block:한 라인을 차지하는 태그
+            -width/height 크기 조절 가능.
+            -여백 조절 가능(margin,padding 둘다 가능)
+        -liline:현재 라인에서 글자 크기만큼 라인을 차지
+            -크기 조절이 불가능함(컨텐츠 크기로 자동 설정)
+            -margin 불가능 padding은 가능
+        -liline-block
+            -현재 라인에서 글자 크기만큼 라인을 차지
+            -크기 조절이 가능
+            -여백 조절 가능(magin,padding 둘다 가능)
+        -각 태그들은 기본 속성을 가지고 있음.
+     -->
+     <style>
+        div{
+            width: 300px;
+            height: 50px;
+            background-color: aqua;
+            
+          
+        }
+        span{
+            width: 300px;
+            height: 50px;
+            background-color: aliceblue;
+            display: block;
+        }
+        button{
+            width: 300px;
+            height: 50px;
+            background-color: red;
+            display: block;
+        }
+        a{
+            width: 300px;
+            height: 50px;
+            background-color: green;
+            display: block;
+        }
+     </style>
+</head>
+<body>
+    <div>안녕하세요. div block속성 입니다.</div>
+    <span>안녕하세요. span inline 속성입니다.</span>
+    <button>안녕하세요 button inline-block 속성입니다. </button>
+    <a href="http://naver.com" target="_blank">naver liline 속성입니다</a>
+</body>
+</html>

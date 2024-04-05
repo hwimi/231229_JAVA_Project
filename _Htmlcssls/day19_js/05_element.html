@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" id="elementmake">엘리먼트 버튼만들기</button>
+    <div id="btnmake">
+
+    </div>
+    
+
+    <script>
+        let elm = document.getElementById("elementmake");
+        let btn2 = document.getElementById("btn2")
+
+        document.addEventListener('click', (e) => {
+            let str = `<button type="button" id="btn3">생성된버튼</button>`
+            document.getElementById("btnmake").innerHTML = str;
+
+            if(e.target.id == 'btn3'){
+                document.getElementById('btnmake').innerHTML+=`<h1>생성된 버튼 클릭</h1>`
+
+            }
+            // let btn3 = document.getElementById('btn3')
+            // btn3.addEventListener('click', () => {
+            // })
+
+        })
+
+
+
+    </script>
+</body>
+
+</html>

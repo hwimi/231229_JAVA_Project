@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        향상된 for
+    </h1>
+    <ul>
+        <li>
+            for of:배열안의 내용의 탐색할 때 사용[]
+            for(let value of Array){
+            code
+            }
+        </li>
+        <li>
+            for in:객체 안의 내용을 탐색할 때 사용{}
+            for(let value in object){
+
+            <!-- value =key -->
+            code
+            }
+        </li>
+    </ul>
+    <h3>약수 출력하기 (1~100까지 입력한 숫자의 약수를 출력)</h3>
+    <input type="text" id="num">
+    <button class="button" onclick="result()">약수출력</button>
+    <h3 id="result">
+        약수값 출력/개수<br>
+        </hr>
+        <script>
+            let rNum = Number(document.getElementById(num)).value;
+            let count;
+            function result() {
+             for(let i=1; i<=rNum; i++){
+                if(rNum%i==0){
+                    count++;
+                    
+                }
+                result.innerHTML=str
+             }
+             document.getElementById("result").innerText=`${i}
+             .
+             총${count}개`
+            }
+          
+
+          
+        </script>
+</body>
+
+</html>

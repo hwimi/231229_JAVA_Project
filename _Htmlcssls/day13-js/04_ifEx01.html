@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>오늘은</h1>
+    <button type="button" onclick="btn()">Today</button>
+    <h3 id="result"></h3>
+    <!-- 오늘날짜와 요일출력 -->
+    <!-- 2024 .03.19.(화)-->
+    <script>
+        // let today = new Date();
+        // console.log(today);
+        // let today2 = today.toLocaleDateString();
+        // console.log(today2);
+        function btn() {
+
+            let today = new Date();
+            console.log(today);
+            let today2 = today.toLocaleDateString(); //2024.3.19
+            console.log(today2);
+            let week;
+            switch (today.getDay()/*getDay 요일번호 0(일)~6(토)*/) {
+                case 0: week=(`${today2} (월)`); break;
+                case 1: week=(`${today2} (화)`); break;
+                case 2: week=(`${today2} (수)`); break;
+                case 3: week=(`${today2} (목)`); break;
+                case 4: week=(`${today2} (금)`); break;
+                case 5: week=(`${today2} (토)`); break;
+                case 6: week=(`${today2} (일)`); break;
+                default: ("없는요일입니다");
+
+            }
+
+            document.getElementById("result").innerText = `${week}`
+        }
+
+
+    </script>
+</body>
+
+</html>

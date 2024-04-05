@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+        border: 7px solid black;
+        width: 200px;
+        height: 50px;
+        margin: 10px auto;
+        text-align: center;
+
+    }
+
+    button {
+
+        border-style: none;
+        font-size: 50px;
+        background-color: white;
+
+
+
+    }
+
+    .container {
+        justify-content: space-around;
+        margin: 30px 200px;
+        display: flex;
+        font-size: 700;
+        font-weight: 20px;
+
+    }
+
+    button:hover {
+        color: red;
+    }
+
+    .img {
+        width: 700px;
+        height: 700px;
+       margin-left: 550px
+       
+
+    }
+</style>
+
+<body>
+    <h1>travel</h1>
+    <div class="container">
+        <button type="button" id="btn1">home</button>
+        <button type="button" id="btn2">seoul</button>
+        <button type="button" id="btn3">tokyo</button>
+        <button type="button" id="btn4">paris</button>
+    </div>
+    <img src="../image/비행기.jpg" alt="" id="img" class="img">
+
+</body>
+<script>
+    let imgTag = document.getElementById('img');
+    document.getElementById('btn1').addEventListener('click', () => {
+        imgTag.src = "../image/비행기.jpg"
+        
+
+    })
+    document.getElementById('btn2').addEventListener('click', () => {
+        imgTag.src = "../image/서울.jpg"
+
+    })
+    document.getElementById('btn3').addEventListener('click', () => {
+        imgTag.src = "../image/도쿄사진.jpg"
+
+    })
+    document.getElementById('btn4').addEventListener('click', () => {
+        imgTag.src = "../image/파리사진.jpg"
+
+    })
+</script>
+
+</html>

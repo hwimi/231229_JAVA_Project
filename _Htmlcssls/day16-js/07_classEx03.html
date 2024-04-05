@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        class user 생성
+        생성자로 name birth를 받아서 멤버 변수로 저장
+        get age() 나이를 리턴
+        status()성인인지 미성년자인지 리턴 (콘솔에)출력
+        */
+        // let today = new Date('2009-01-01');
+        // console.log(today.toLocaleDateString())
+
+        class user {
+            constructor(name, birth) {
+                this.name = name;
+                this.birth = birth;
+                // this.age=age; // 가능한가 이게 안될꺼같은데??? 오류 뜬다 매개변수 없어서 안된다 애초에 안된다..
+
+            }
+            get age() {
+                let today = new Date(); // 이걸 오늘 날짜로 만들면 안되고 
+                let birthdate =new Date(this.birth);
+                let a=today.getFullYear();
+                let b=birthdate.getFullYear(); //맞나 이게 모르겠다 ㅠㅠㅠㅠ 
+                
+                return a - b; //ㅠㅠㅠ
+            }
+            status() {
+               
+                if (this.age > 19) {
+                     console.log("성인입니다");
+                } else if (this.age <= 19) {
+                     console.log("미성년자입니다");
+                }
+            }
+           
+
+            
+        }
+        let my=new user('이휘근','2008-06-18');
+        console.log(my);
+        console.log(my.age);
+         my.status();
+
+       
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button type="button" onclick="btn1()">랜덤 숫자 생성버튼</button>
+  <button type="button" onclick="btn2()">다시 시도</button><br>
+  <input type="text" id="c">
+  <button type="button" onclick="btn3()">정답 !!</button>
+
+
+
+
+  <h3 id="com"></h3>
+  <h3 id="result"></h3>
+
+  <script>
+    let count = 0;
+    function btn3() {
+      let player = document.getElementById('c').value;
+      let str=``;
+      let b = com();
+      if (player === b) {
+        str=`시도횟수${count} 정답입니다.`
+      } else if (player > b) {
+        str+=`시도횟수${count} down~!!.`
+        count++;
+      } else if (player < b) {
+        str+=`시도횟수${count} up~!!.`
+        count++;
+      }
+
+      document.getElementById("result").innerText =str;
+
+    }
+    
+    function btn1() {
+      let ment = "컴퓨터가 랜덤수 (1~99)를 생성하였습니다";
+      document.getElementById("com").innerText = ment;
+      let a = com();
+      console.log(a);
+
+    }
+    function com() {
+      let com = 0;
+      com = Math.floor(Math.random() * 99) + 1;
+      return com;
+    }
+  </script>
+</body>
+
+</html>

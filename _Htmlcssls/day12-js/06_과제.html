@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        이름: <input type="text" id="name"><br>
+        주민번호 : <input type="text" id="birth"><br>
+        <button type="button" onclick="button()">확인</button><br>
+</form>
+<h3 id="result"></h3>
+<script>
+    function button(){
+        let name=(document.getElementById('name').value);
+        let birth=(document.getElementById('birth').value);
+        let day=birth.slice(0,birth.indexOf("-"));
+        let age=birth.slice(0,2);
+        let gender=birth.charAt(birth.indexOf("+")+1)
+        let male=(gender=="1"||gender=="3")?"남":"여";
+        document.getElementById('result').innerText=`이름:${name},주민번호${day} 나이${age} 성별${male}`
+    }
+</script>
+</body>
+</html>

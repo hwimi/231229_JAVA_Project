@@ -1,0 +1,139 @@
+body {
+    width: 100%;
+    font-family: NanumSquareRoundEB;
+
+}
+
+header{
+   width: 100%;
+   height: 80px;
+   background-color: red;
+}
+footer{
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    background-color: blanchedalmond;
+}
+.container1 {
+    margin-top: 50px;
+    background-color: aqua;
+    height: 100px;
+
+}
+
+.container2 {
+    background-color: antiquewhite;
+
+    height: 700px;
+}
+
+.container2>.gigum {
+    
+    height: 700px;
+    width: calc(100% / 3);
+    float: left;
+    text-align: center;
+    background-image: url(../icon/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+   
+   
+    
+
+  
+}
+/*subject 시작파트*/
+.container2>.subject {
+   background-color: white;
+    height: 700px;
+    width: calc(100%/3);
+    float: left;
+
+}
+
+.container2>.subject>p {
+    text-align: center;
+}
+
+.container2>.subject>.pr {
+    background-color: gray;
+    height: 650px;
+    width: calc(100%/2);
+    float: left;
+}
+
+.container2>.subject>.pr2 {
+  background-color: aquamarine;
+    height: 650px;
+    width: calc(100%/2);
+    float: left;
+}
+
+
+/* .container2>.subject>.pr>ul>li>a {
+    text-decoration: none;
+    color: black;
+} */
+.container2>.subject>.pr>ul>li{
+    list-style: none;
+    margin-top: 50px;
+    margin-left: -35px;
+}
+
+.container2>.subject>.pr2>ul>li { /*자바스크립트 부분*/
+    list-style: none;
+    margin-top: 50px;
+    margin-left: -35px;
+    
+}
+.container2>.subject>.pr>ul>li>a:hover {
+    color: aqua;
+}
+/*subject 파트*/
+
+
+/*student part 시작*/
+.container2>.student {
+    background-color: blue;
+    height: 700px;
+    width: calc(100%/3);
+    float: right;
+   
+}
+.container2>.student p{
+    text-align: center;
+}
+.student>.privacy{
+    background-color: aqua;
+    height: calc(100%/2);
+    width: 100%;
+}
+.student>.privacy>input{
+    padding: 20px;
+    width: 580px
+}
+.first{
+    height: 180px;
+}
+
+/*student part 끝*/
+
+.container3 {
+    height: 100px;
+    background-color: red;
+    margin-top: 20px;
+    padding: 0;
+}
+.container3 a button{
+    float: right;
+    width: 100px;
+    background-color: blue;
+}
+.container3 button:hover{
+    color: aqua;
+}
+
+

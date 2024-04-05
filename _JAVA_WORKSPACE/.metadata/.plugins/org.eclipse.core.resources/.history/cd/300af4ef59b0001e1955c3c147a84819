@@ -1,0 +1,34 @@
+package day07;
+
+public class StringEX02 {
+
+	public static void main(String[] args) {
+		/*5개의 파일명이 주어졌을때,
+		 * 검색어를 입력하면 해당 단어를 포함하는 파일을  출력
+		 * 
+		 */
+		String filename[]= {"이것이자바다.java","java의정석.java","string.jpg"};
+		//ex:java=>이것이자바다.java , java의정석.java출력
+		//string=>String.jpg String 메서드.txt
+		//txt=>string 메서드.txt array.txt
+		//스트링=>검색 결과가 없습니다
+		
+		 for(String s:filename) {
+			 System.out.println(s.contains("java"));
+			 while(false) {
+				 System.out.println(s);
+				 break;
+				 
+				 }
+			 }
+		
+		
+		
+		
+		
+		
+	
+
+	}
+
+}

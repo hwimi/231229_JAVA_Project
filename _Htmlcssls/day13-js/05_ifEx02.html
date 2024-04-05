@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>성적확인</legend>
+            이름: <input type="text" id="name"><br>
+            국어: <input type="text" id="kr"><br>
+            영어: <input type="text" id="en"><br>
+            수학: <input type="text" id="math"><br>
+            <button type="button" id="btn">성적계산버튼</button>
+        </fieldset>
+    </form>
+    <h3 id="result"></h3>
+    <!-- 이름 ,합계 평군 합격여부(60이상이면 pass/fail) -->
+    <!-- 입력한 성적의 점수값이 0~100 사이의 값이 아니면  창 띄워 안내 -->
+    <script>
+        document.getElementById('btn').addEventListener('click', () => {
+            let name = document.getElementById("name").value;
+            let kr = document.getElementById("kr").value;
+            let en = document.getElementById("en").value;
+            let math = document.getElementById("math").value;
+            let pass;
+
+
+            let sum = Number(kr) + Number(en) + Number(math);
+            let av = (sum / 3);
+            if (av > 60) {
+                pass = "합격";
+            } else {
+                pass = "불합격";
+            }
+            if (kr < 0 || kr > 100) {
+                alert("0~100 사이의 숫자를 입력해주세")
+                document.getElementById("kr").value = null;
+                document.getElementById("en").value = null;
+                document.getElementById("math").value = null;
+                return false;
+            } else if (en < 0 || en > 100) {
+                alert("0~100 사이의 숫자를 입력해주세")
+                document.getElementById("kr").value = null;
+                document.getElementById("en").value = null;
+                document.getElementById("math").value = null;
+                return false;
+
+            } else if (math < 0 || math > 100) {
+                alert("0~100 사이의 숫자를 입력해주세요")
+                document.getElementById("kr").value = null;
+                document.getElementById("en").value = null;
+                document.getElementById("math").value = null;
+                return false;
+            }
+            document.getElementById("result").innerText = `
+            이름:${name}
+            국어:${kr}
+            영어:${en}
+            수학:${math}
+            합계:${sum}
+            평균:${av}
+            합격여부:${pass}`
+
+        });
+    </script>
+</body>
+
+</html>
+<!-- toFixed(2) -->

@@ -1,0 +1,75 @@
+package day09;
+
+import java.util.Scanner;
+
+public class 과제 {
+
+	public static void main(String[] args) {
+		/*야구게임
+		 * 컴퓨터가 3자리의 숫자를 생성 (각 자리의 수는 1~9까지의 수)=>배열로 랜덤 저장(중복 불가능)
+		 * 유저는 3자리의 숫자를 맞추는 게임=>직접입력 중복되지않게
+		 * 자리와 숫자가 일치하면 strike
+		 * 숫자만 맞으면 ball
+		 * 아무것도 안맞으면 out
+		 * 컴퓨터 생성 번호 123
+		 * 사용자 번호:178=1s
+		 * 사용자 번호:132=1s2b
+		 * 사용자 번호:789=out
+		 * 사용자 번호:123=정답
+		 * 
+		 * 
+		 */
+		Scanner sc=new Scanner(System.in);
+		int arr[]=new int[3];
+		int cnt=0;
+		
+	randomArray(arr);
+	
+		
+	for(int i=0; i<arr.length; i++) {
+		int a=(int)(Math.random()*9)+1;
+		arr[i]=a;
+		if(arr[i]==a) {
+			
+		}
+		System.out.print(a);
+	}
+	
+		
+		
+	
+		
+		
+		
+		sc.close();
+	}
+
+	public static boolean inContain(int arr[], int random) {
+		for(int i=0; i<arr.length; i++) {
+			if(arr[i]==random) {
+				return true;
+			}
+		}
+		return false;
+	}
+	public static void randomArray(int arr[]) {
+		//배열을 받아서 배열에 랜덤 값 중복없이 체우기
+		int cnt=0; //while에서 i역할을 할변수
+		while(cnt<arr.length) {
+			int r=(int)(Math.random()*9)+1;
+			if(!inContain(arr, r)) {
+				arr[cnt]=r;
+				cnt++;
+			}
+		}
+		
+	}
+public static void printArray(int arr[]) {
+		
+		for(int i=0; i<arr.length; i++) {
+			System.out.print(arr[i]+" ");
+		}
+		System.out.println();
+	}
+	
+}

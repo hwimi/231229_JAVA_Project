@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid black;
+
+
+            line-height: 50px;
+            height: 50px;
+            width: 100%;
+            position: sticky;
+            top:0;
+            border-left: none;
+
+
+        }
+
+        div>div {
+            text-align: center;
+            width: calc(100% / 4);
+            border: 1px solid black;
+            float: left;
+            box-sizing: border-box;
+            text-decoration: none;
+           
+
+
+
+
+
+        }
+
+        div>div:hover {
+            background-color: rgb(0, 255, 208);
+            cursor: pointer;
+        }
+        .s{
+            border-right: none;
+            border-top: none;
+            border-bottom: none;
+            /* border-left: none; */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="s">menu1</div>
+        <div class="s">menu2</div>
+        <div class="s">menu3</div>
+        <div class="s">menu4</div>
+    </div>
+   
+</body>
+
+</html>

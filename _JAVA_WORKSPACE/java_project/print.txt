@@ -1,0 +1,28 @@
+1print
+연습중입니다
+2print
+연습중입니다
+3print
+연습중입니다
+4print
+연습중입니다
+5print
+연습중입니다
+6print
+연습중입니다
+7print
+연습중입니다
+8print
+연습중입니다
+9print
+연습중입니다
+11append mode
+12append mode
+13append mode
+14append mode
+15append mode
+16append mode
+17append mode
+18append mode
+19append mode
+20append mode

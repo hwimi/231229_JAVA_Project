@@ -1,0 +1,16 @@
+package day07;
+
+public class Method01 {
+
+	public static void main(String[] args) {
+		/*Method(메서드):기능(함수),funciton
+		 * 메서드 선언 및 구현
+		 * 접근제한자(제어자) 리턴타입 메서드명(매개변수){
+		 * 구현;
+		 * }
+		 * 
+		 */
+
+	}
+
+}

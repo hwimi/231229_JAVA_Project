@@ -1,0 +1,16 @@
+package day07;
+
+public class 과제 {
+
+	public static void main(String[] args) {
+		//계산기를 만들어보자
+		//--meun--
+		//1.덧셈 2.뺄셈 3곱셈 4.나머지 6.종료
+		//>메뉴선택1
+		//숫자1:5
+		//숫자2:10
+		//결과 5+10=15
+
+	}
+
+}
